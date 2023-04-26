@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanTeng Group - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
+    <script type="module" src="contact.js"></script>
+    <script type="module" src="utils.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to DanTeng Group</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="products.html">Products</a>
+            <a class="current" href="contact.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="article-container">
+            <aside>
+                <h2>Feedback</h2>
+                <hr>
+                <br>
+                <p>We appreciate your thoughts and suggestions on how we can improve WordWise. Please share your feedback using the form below:</p>
+                <br>
+            
+                <form id="feed_back_form">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="feedback-type">Feedback Type:</label>
+                        <select id="feedback-type" name="feedback-type">
+                            <option value="suggestion">Suggestion</option>
+                            <option value="bug-report">Bug Report</option>
+                            <option value="testimonial">Testimonial</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Your Feedback:</label>
+                        <textarea id="message" name="message" rows="10" cols="50" required></textarea>
+                    </div>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+                <h3>Result:</h3>
+                <div id="result"></div>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 DanTeng Group. All rights reserved.</p>
+    </footer>
+</body>
+</html>

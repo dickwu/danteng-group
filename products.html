@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanTeng Group - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
+    <script type="module" src="products.js"></script>
+    <script type="module" src="utils.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to DanTeng Group</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a class="current" href="products.html">Products</a>
+            <a href="contact.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="article-container">
+            <aside>
+                <h2>Telegram Notice</h2>
+                <hr>
+                <br>
+                <p>To facilitate efficient and prompt dissemination of important notice messages, we have established a
+                    Telegram notice channel that allows users to submit updates via HTTP application programming
+                    interface (API). This channel is readily accessible to anyone, and offers a convenient platform for
+                    sending notice messages.</p>
+                <br>
+                <h2>How to use</h2>
+                <ul>
+                    <li>Step 1: Create a Telegram account and download the Telegram application.</li>
+                    <li>Step 2: Click the link to join the <a href="https://t.me/DantengNoticeBot">DantengNoticeBot</a>
+                        channel.</li>
+                    <li>Step 3: Send the <em>/start</em> command to the channel to obtain your unique notice
+                        <em>URL</em> and <em>Token</em>.</li>
+                </ul>
+                <br>
+                <h2>Testing Send Notice</h2>
+                <p>Fill the form below to send a notice message to the <em>DantengNoticeBot</em> channel.</p>
+                <p><b>Notice:</b>The message will be sent to the channel that only you can see it.</p>
+                <form id="test_notice_form">
+                    <label for="token">Token:</label>
+                    <input type="text" id="token" name="token" required>
+
+                    <label for="message">Message:</label>
+                    <textarea type="text" id="message" name="message" required>Hello World!</textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+                <h3>Result:</h3>
+                <div id="result"></div>
+            </aside>
+            <aside>
+                <h2>Word Map</h2>
+                <hr>
+                <br>
+                <p>Are you an avid language learner seeking a smarter way to expand your vocabulary? Look no further!
+                    Word-Map is an innovative, interactive website designed to revolutionize the way you learn and
+                    retain new words. Our platform offers a highly personalized experience, enabling you to categorize
+                    and organize newly encountered words based on your familiarity levels. This tailored approach to
+                    vocabulary enhancement makes WordWise an indispensable resource for language learners of all skill
+                    levels.</p>
+                <br>
+                <h2>Key Features</h2>
+                <ul>
+                    <li>
+                        <h3>Personalized Vocabulary Curation</h3>
+                        <p>Adapts to your unique learning journey, allowing you to add and categorize words based on
+                            your familiarity levels.</p>
+                    </li>
+                    <li>
+                        <h3>Advanced Categorization System</h3>
+                        <p>Intuitively categorizes words into different familiarity levels, making it easy to track your
+                            progress and focus on areas that need improvement.</p>
+                    </li>
+
+                    <li>
+                        <h3>Cross-Platform Accessibility</h3>
+                        <p>Access WordWise anytime, anywhere, on any device with our responsive web design.</p>
+                    </li>
+                    <li>
+                        <h3>Only register by Notice</h3>
+                        <p>Register by notice, no need to fill in any information</p>
+                    </li>
+                </ul>
+                <hr>
+                <button class="product-button" onclick="window.location.href='https://word.danteng.live'">Try it</button>
+
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 DanTeng Group. All rights reserved.</p>
+    </footer>
+</body>
+</html>

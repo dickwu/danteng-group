@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DanTeng Group - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to DanTeng Group</h1>
+    <nav>
+      <a class="current" href="/">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main">
+        <img src="images/telegram-bot.png" alt="Telegram Bot">
+      <h2>Discover Our Innovative Telegram Bot Solutions</h2>
+      <p>DanTeng Group specializes in creating powerful tools and solutions based on the popular messaging platform, Telegram Bot. Our products include Notice, a versatile HTTP API for sending text messages to specific Telegram channels, and Word-Map, an intuitive website that collects and organizes users' new words based on their familiarity levels.</p>
+      
+    </section>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+          <div class="card" onclick="window.location.href='products.html#notice'">
+            <img src="images/notice_logo.png" alt="Notice logo">
+            <div>
+              <h3>Notice</h3>
+              <p>Send text messages to a specified Telegram channel through a simple HTTP API. Seamless integration with various web applications, enhanced by CORS support.</p>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='products.html#word-map'">
+            <img src="images/word_map_logo.png" alt="Word-Map logo">
+            <div>
+              <h3>Word-Map</h3>
+              <p>An interactive website that stores and categorizes newly encountered words based on familiarity levels, making it an invaluable resource for language learners.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="updates">
+        <h2>Recent Updates</h2>
+        <ul class="log-list">
+          <li>
+            <span class="log-date">2023-04-20</span>
+            <span class="log-description">Notice API now supports CORS (Cross-Origin Resource Sharing) policy.</span>
+          </li>
+        </ul>
+      </section>
+    
+  </main>
+</body>
+
+</html>
